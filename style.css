@@ -64,11 +64,56 @@ header p {
   overflow: hidden;
   scroll-snap-align: start;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
 }
 
 .timeline-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 32px rgba(15, 59, 162, 0.18);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0f3ba2 0%, #1a4fb8 100%);
+  border-radius: 18px;
+  padding: 1.5rem;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.timeline-card:hover .card-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card-overlay h2 {
+  margin: 0 0 0.5rem;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.card-overlay h3 {
+  margin: 0 0 1rem;
+  color: #e8f0ff;
+  font-size: 1.15rem;
+}
+
+.card-overlay p {
+  margin: 0;
+  color: white;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .timeline-card img {
