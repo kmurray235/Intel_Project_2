@@ -151,6 +151,39 @@ p {
   text-align: center;
 }
 
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  padding: 2rem 1rem 0;
+}
+
+.column {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 18px;
+  border: 1px solid #dbe5f3;
+  box-shadow: 0 12px 24px rgba(15, 59, 162, 0.08);
+}
+
+.column h2 {
+  margin-top: 0;
+}
+
+.column p {
+  margin: 0.75rem 0 0;
+  color: #344054;
+  line-height: 1.6;
+}
+
+.column a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0f3ba2;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 @media (max-width: 640px) {
   .timeline-card {
     flex: 0 0 240px;
@@ -159,4 +192,9 @@ p {
   header {
     padding: 1.5rem 1rem;
   }
+
+  .columns {
+    grid-template-columns: 1fr;
+  }
 }
+
