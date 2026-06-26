@@ -184,6 +184,80 @@ p {
   text-decoration: none;
 }
 
+.newsletter {
+  background: white;
+  max-width: 920px;
+  margin: 2rem auto 3rem;
+  padding: 2rem 2rem 2.5rem;
+  border-radius: 18px;
+  border: 1px solid #dbe5f3;
+  box-shadow: 0 14px 24px rgba(15, 59, 162, 0.08);
+}
+
+.newsletter h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.newsletter p {
+  max-width: 720px;
+  margin: 0.75rem auto 1.75rem;
+  text-align: center;
+  color: #525f7f;
+}
+
+.newsletter form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field.full-width {
+  grid-column: span 3;
+}
+
+.newsletter label {
+  margin-bottom: 0.35rem;
+  color: #102a43;
+  font-weight: 600;
+}
+
+.newsletter input,
+.newsletter textarea {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #102a43;
+}
+
+.newsletter textarea {
+  resize: vertical;
+}
+
+.newsletter button {
+  grid-column: span 3;
+  background: #0f3ba2;
+  color: white;
+  border: none;
+  padding: 0.95rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.newsletter button:hover {
+  background: #0d3490;
+}
+
 @media (max-width: 640px) {
   .timeline-card {
     flex: 0 0 240px;
