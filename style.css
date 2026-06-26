@@ -30,7 +30,7 @@ header p {
   max-width: 700px;
   margin: 0.75rem auto 0;
   font-size: 1rem;
-  color: #1d2939;
+  color: white;
 }
 
 .timeline-section {
@@ -80,7 +80,7 @@ header p {
   height: 100%;
   background: linear-gradient(135deg, #0f3ba2 0%, #1a4fb8 100%);
   border-radius: 18px;
-  padding: 1.5rem;
+  
   color: white;
   opacity: 0;
   pointer-events: none;
@@ -89,7 +89,7 @@ header p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .timeline-card:hover .card-overlay {
@@ -104,16 +104,18 @@ header p {
 }
 
 .card-overlay h3 {
-  margin: 0 0 1rem;
+  margin:  0 1rem;
   color: #e8f0ff;
   font-size: 1.15rem;
+  text-align: left;
 }
 
 .card-overlay p {
-  margin: 0;
+  
   color: white;
   font-size: 0.95rem;
   line-height: 1.5;
+  text-align: left;
 }
 
 .timeline-card img {
@@ -136,15 +138,17 @@ header p {
 
 .timeline-card p {
   margin: 0 1rem 1.25rem;
-  color: #3f4f69;
+  color: white;
   font-size: 0.95rem;
+  
 }
 
 p {
-  text-align: center;
+  
   font-size: 0.95rem;
   color: #525f7f;
   margin: 0 1rem 2rem;
+  text-align: center;
 }
 
 @media (max-width: 640px) {
